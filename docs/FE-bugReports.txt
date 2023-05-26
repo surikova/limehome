@@ -7,7 +7,7 @@ Step 2: Enter first 1.5
 Step 3: Select '+' operator
 Step 4: Enter 100.456 
 Step 5: Submit the expression (Click 'Go!' button)
-Actula result: 101
+Actual result: 101
 Expected result: 101.956
 
 TestID: SUB-11
@@ -17,7 +17,7 @@ Step 2: Enter first 25.89
 Step 3: Select '-' operator
 Step 4: Enter 6.5 
 Step 5: Submit the expression (Click 'Go!' button)
-Actula result: 19
+Actual result: 19
 Expected result: 19.39
 
 TestID: MULT-9
@@ -27,7 +27,7 @@ Step 2: Enter first 5.5
 Step 3: Select '*' operator
 Step 4: Enter 5.5 
 Step 5: Submit the expression (Click 'Go!' button)
-Actula result: 25
+Actual result: 25
 Expected result: 30.25
 
 TestID: DEV-11
@@ -37,7 +37,7 @@ Step 2: Enter first 70.56
 Step 3: Select '/' operator
 Step 4: Enter 3.3 
 Step 5: Submit the expression (Click 'Go!' button)
-Actula result: 23.333333333333332
+Actual result: 23.333333333333332
 Expected result: 21.3818181818
 
 TestID: MOD-5
@@ -47,7 +47,7 @@ Step 2: Enter first 6.5
 Step 3: Select '%' operator
 Step 4: Enter 0.2 
 Step 5: Submit the expression (Click 'Go!' button)
-Actula result: NaN
+Actual result: NaN
 Expected result: 0.1
 
 Comment: I assume that all bugs mentioned above have the same root cause. 
