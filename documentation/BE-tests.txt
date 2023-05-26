@@ -1,0 +1,45 @@
+Test suite 1 - Verifies correct functioning of the API endpoint https://api.limehome.com/properties/v1/public/properties/129
+This set of checks verifies if the endpoint works as expected
+
+ID          Title 
+PROP-1      Status code verification
+It verifies that the API endpoint returns a 200 OK response status code
+
+GET https://api.limehome.com/properties/v1/public/properties/129
+
+Expected result:
+Status code is 20
+
+ID          Title 
+PROP-2      Response body verification
+It verifies that the API endpoint returns expected properties in the response body and contains a property object with ID 129
+
+GET https://api.limehome.com/properties/v1/public/properties/129
+
+Expected result:
+1. Returns expected properties in response:
+    - id, value type: number
+    - name, value type: string
+    - location, value type: object
+    - description, value type: string
+    - images, value type: array
+2. Returns a property object with ID 129
+
+ID          Title 
+PROP-3      Response time verification
+It verifies that the API endpoint response time is less than 2 seconds
+
+GET https://api.limehome.com/properties/v1/public/properties/129
+
+Expected result:
+Response time is less than 2 seconds
+
+ID          Title 
+PROP-4      Headers verification
+It verifies response headers have expected values
+
+GET https://api.limehome.com/properties/v1/public/properties/129
+
+Expected result:
+- 'Content-Type' header has value 'application/json'
+- 'Content-Length' exists

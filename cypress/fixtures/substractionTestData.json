@@ -1,0 +1,65 @@
+{
+  "data": [
+    {
+      "firstValue": 200,
+      "secondValue": 100,
+      "expectedResult": 100
+    },
+    {
+      "firstValue": 353,
+      "secondValue": 3583,
+      "expectedResult": -3230
+    },
+    {
+      "firstValue": 5,
+      "secondValue": 0,
+      "expectedResult": 5
+    },
+    {
+      "firstValue": 0,
+      "secondValue": 34,
+      "expectedResult": -34
+    },
+    {
+      "firstValue": 500000000000000010,
+      "secondValue": 60000000000000005,
+      "expectedResult": 4.4e+17
+    },
+    {
+      "firstValue": -10000,
+      "secondValue": -5,
+      "expectedResult": -9995
+    },
+    {
+      "firstValue": -96,
+      "secondValue": 0,
+      "expectedResult": -96
+    },
+    {
+      "firstValue": 0,
+      "secondValue": -7,
+      "expectedResult": 7
+    },
+    {
+      "firstValue": 7890,
+      "secondValue": -60,
+      "expectedResult": 7950
+    },
+    {
+      "firstValue": -900,
+      "secondValue": 50,
+      "expectedResult": -950
+    },
+    {
+      "firstValue": 25.89,
+      "secondValue": 6.5,
+      "expectedResult": 19.39
+    }
+    ,
+    {
+      "firstValue": 4,
+      "secondValue": 2.5,
+      "expectedResult": 1.5
+    }
+  ]
+}

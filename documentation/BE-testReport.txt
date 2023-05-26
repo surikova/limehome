@@ -1,0 +1,8 @@
+
+Test suite 1 - Verifies correct functioning of the API endpoint https://api.limehome.com/properties/v1/public/properties/129
+
+TestID              Status      Actual result   Expected result
+PROP-1              Passed
+PROP-2              Passed    
+PROP-3              Passed
+PROP-4              Passed

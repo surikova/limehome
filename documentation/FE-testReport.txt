@@ -1,0 +1,76 @@
+Test set 1 - Verifies arithmetic operations
+
+ADDITON data set
+TestID          Status      Actual result   Expected result
+ADD-1           Passed
+ADD-2           Passed
+ADD-3           Passed
+ADD-4           Passed
+ADD-5           Passed
+ADD-6           Passed
+ADD-7           Failed      101             101.956
+ADD-8           Skipped
+
+SUBSTRACTION data set
+TestID          Status      Actual result   Expected result
+SUB-1           Passed
+SUB-2           Passed       
+SUB-3           Passed       
+SUB-4           Passed       
+SUB-5           Passed       
+SUB-6           Passed      
+SUB-7           Passed       
+SUB-8           Passed       
+SUB-9           Passed       
+SUB-10          Passed      
+SUB-11          Failed      19              19.39      
+SUB-12          Skipped
+
+MULTIPLICATION data set
+TestID          Status      Actual result   Expected result
+MULT-1          Passed
+MULT-2          Passed
+MULT-3          Passed
+MULT-4          Passed
+MULT-5          Passed
+MULT-6          Passed
+MULT-7          Passed
+MULT-8          Passed
+MULT-9          Failed      25              30.25
+MULT-10         Skipped
+
+DEVISION data set
+TestID          Status      Actual result       Expected result
+DEV-1           Passed
+DEV-2           Passed
+DEV-3           Passed
+DEV-4           Passed
+DEV-5           Passed
+DEV-6           Passed
+DEV-7           Passed
+DEV-8           Passed
+DEV-9           Passed
+DEV-10          Passed
+DEV-11          Failed      23.333333333333332  21.3818181818
+DEV-12          Skipped
+
+MODULO data set
+TestID          Status      Actual result   Expected result
+MOD-1           Passed
+MOD-2           Passed
+MOD-3           Passed
+MOD-4           Passed
+MOD-5           Failed      NaN             0.1
+MOD-6           Skipped
+MOD-7           Passed
+
+----------------------------------------------------------------------------
+
+Test set 2 - Verifies correct functioning with bad input
+
+TestID          Status      Actual result   Expected result
+BAD-1           Passed
+BAD-2           Failed      NaN             Infinity
+BAD-3           Passed
+BAD-4           Passed
+BAD-5           Passed

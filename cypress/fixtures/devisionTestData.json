@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "firstValue": 500,
+      "secondValue": 100,
+      "expectedResult": 5
+    },
+    {
+      "firstValue": 23,
+      "secondValue": 5,
+      "expectedResult": 4.6
+    },
+    {
+      "firstValue": 2,
+      "secondValue": 7,
+      "expectedResult": 0.2857142857142857
+    },
+    {
+      "firstValue": 0,
+      "secondValue": 417,
+      "expectedResult": 0
+    },
+    {
+      "firstValue": 8500000000000000000,
+      "secondValue": 5000000000000000,
+      "expectedResult": 1700
+    },
+    {
+      "firstValue": -90,
+      "secondValue": -3,
+      "expectedResult": 30
+    },
+    {
+      "firstValue": 0,
+      "secondValue": -77,
+      "expectedResult": 0
+    },
+    {
+      "firstValue": 68,
+      "secondValue": -2,
+      "expectedResult": -34
+    },
+    {
+      "firstValue": 963,
+      "secondValue": 1,
+      "expectedResult": 963
+    },
+    {
+      "firstValue": -65,
+      "secondValue": 1,
+      "expectedResult": -65
+    },
+    {
+      "firstValue": 70.56,
+      "secondValue": 3.3,
+      "expectedResult": 21.3818181818
+    },
+    {
+      "firstValue": 10,
+      "secondValue": 2.5,
+      "expectedResult": 4
+    }
+  ]
+}

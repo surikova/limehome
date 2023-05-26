@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "firstValue": 55,
+      "secondValue": 44,
+      "expectedResult": 2420
+    },
+    {
+      "firstValue": 650,
+      "secondValue": 1,
+      "expectedResult": 650
+    },
+    {
+      "firstValue": 23,
+      "secondValue": 0,
+      "expectedResult": 0
+    },
+    {
+      "firstValue": 4500000000000000000,
+      "secondValue": 20000000000000000,
+      "expectedResult": 9e+34
+    },
+    {
+      "firstValue": -5,
+      "secondValue": -5,
+      "expectedResult": 25
+    },
+    {
+      "firstValue": -98,
+      "secondValue": 0,
+      "expectedResult": 0
+    },
+    {
+      "firstValue": -42,
+      "secondValue": 1,
+      "expectedResult": -42
+    },
+    {
+      "firstValue": 3,
+      "secondValue": -20,
+      "expectedResult": -60
+    },
+    {
+      "firstValue": 5.5,
+      "secondValue": 5.5,
+      "expectedResult": 30.25
+    },
+    {
+      "firstValue": 45,
+      "secondValue": 3.3,
+      "expectedResult": 148.5
+    }
+  ]
+}

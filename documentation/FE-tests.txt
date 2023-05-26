@@ -1,0 +1,164 @@
+Test set 1 - Verifies arithmetic operations
+This set of checks verifies if arithmetic operations work as expected
+
+Step 1: Open page with the calculator https://juliemr.github.io/protractor-demo/
+Step 2: Enter first value
+Step 3: Select operator
+Step 4: Enter second value 
+Step 5: Submit the expression (Click 'Go!' button)
+
+Expected result:
+- Correct result is displayed in the result field under the calculator form
+- There is a new entry in the History table
+- The new entry in the History table contains time
+- The new entry in the History table contains expression according to the data enetered on the Steps 2-4
+- The new entry in the History table contains correct result
+
+ADDITON data set - operator '+'
+ID          First value         Second value        Result      Note
+ADD-1       10                  10                  20
+ADD-2       0                   123                 123
+ADD-3       200000000000000001  10000000000000005   2.1e+17     exepected result here depends on the requirements. For example, it can be E notation. Or input can be limited and in this case the alert will be displayed
+ADD-4       -56                 -789                -845
+ADD-5       0                   -905                -905
+ADD-6       10567               -54                 10513
+ADD-7       1.5                 100.456             101.956     expected result here depends on the requirements. If calculator is not supposed to work with decimal numbers, alert should be shown
+ADD-8       43                  4.3                 47.3        expected result here depends on the requirements. If calculator is not supposed to work with decimal numbers, alert should be shown
+
+SUBSTRACTION data set - operator '-'
+ID          First value         Second value        Result      Note
+SUB-1       200                 100                 100
+SUB-2       353                 3583                -3230
+SUB-3       5                   0                   5
+SUB-4       0                   34                  -34
+SUB-5       500000000000000010  60000000000000005   4.4e+17     expected result here depends on the requirements. For example, it can be E notation. Or input can be limited and in this case the alert will be displayed
+SUB-6       -10000              -5                  -9995
+SUB-7       -96                 0                   -96
+SUB-8       0                   -7                  7
+SUB-9       7890                -60                 7950
+SUB-10      -900                50                  -950
+SUB-11      25.89               6.5                 19.39       expected result here depends on the requirements. If calculator is not supposed to work with decimal numbers, alert should be shown
+SUB-12      4                   2.5                 1.5         expected result here depends on the requirements. If calculator is not supposed to work with decimal numbers, alert should be shown
+
+MULTIPLICATION data set - opearator '*'
+ID          First value         Second value        Result      Note
+MULT-1      55                  44                  2420
+MULT-2      650                 1                   650
+MULT-3      23                  0                   0
+MULT-4      4500000000000000000 20000000000000000   9e+34       exected result here depends on the requirements. For example, it can be E notation. Or input can be limited and in this case the alert will be displayed
+MULT-5      -5                  -5                  25
+MULT-6      -98                 0                   0
+MULT-7      -42                 1                   -42
+MULT-8      3                   -20                 -60
+MULT-9      5.5                 5.5                 30.25
+MULT-10     45                  3.3                 148.5
+
+DEVISION data set - operator '/'
+ID          First value         Second value        Result              Note
+DEV-1       500                 100                 5
+DEV-2       23                  5                   4.6
+DEV-3       2                   7                   0.2857142857142857  expected result depends on the requirements about rounding numbers
+DEV-4       0                   417                 0
+DEV-5       8500000000000000000 5000000000000000    1700
+DEV-6       -90                 -3                  30
+DEV-7       0                   -77                 0
+DEV-8       68                  -2                  -34
+DEV-9       963                 1                   963
+DEV-10      -65                 1                   -65
+DEV-11      70.56               3.3                 21.3818181818       expected result depends on the requirements about rounding numbers
+DEV-12      10                  2.5                 4
+
+MODULO data set - operator '%'
+ID          First value         Second value        Result      Note
+MOD-1       300                 33                  3
+MOD-2       10                  20                  10
+MOD-3       0                   17                  0
+MOD-4       -100                -7                  -2
+MOD-5       6.5                 0.2                 0.1
+MOD-6       100                 1.3                 1.2
+MOD-7       1                   1                   0
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Test set 2 - Verifies correct functioning with bad input
+This set of checks verifies if calculator works as expected without any crasches with incorrect input
+
+ID      Title 
+BAD-1   Devision by 0
+Step 1: Open page with the calculator https://juliemr.github.io/protractor-demo/
+Step 2: Enter 6 to the first input
+Step 3: Select devision operator '/'
+Step 4: Enter 0 to the second input 
+Step 5: Submit the expression (Click 'Go!' button)
+
+Expected result:
+- The application does not crash
+- 'Infinity' is displayed in the result field under the calculator form
+- There is a new entry in the History table
+- The new entry in the History table contains time
+- The new entry in the History table contains expression according to the data enetered on the Steps 2-4
+- The new entry in the History table contains 'Infinity' in the result cell
+
+ID      Title
+BAD-2   Modulo by 0
+Step 1: Open page with the calculator https://juliemr.github.io/protractor-demo/
+Step 2: Enter 16 to the first input
+Step 3: Select devision operator '%'
+Step 4: Enter 0 to the second input 
+Step 5: Submit the expression (Click 'Go!' button)
+
+Expected result:
+- The application does not crash
+- 'Infinity' is displayed in the result field under the calculator form
+- There is a new entry in the History table
+- The new entry in the History table contains time
+- The new entry in the History table contains expression according to the data enetered on the Steps 2-4
+- The new entry in the History table contains 'Infinity' in the result cell
+
+ID      Title
+BAD-3   Double negative digit in the input
+Step 1: Open page with the calculator https://juliemr.github.io/protractor-demo/
+Step 2: Enter --56 to the first input
+Step 3: Select devision operator '+'
+Step 4: Enter 5 to the second input 
+Step 5: Submit the expression (Click 'Go!' button)
+
+Expected result:
+- The application does not crash
+- 'NaN' is displayed in the result field under the calculator form
+- There is a new entry in the History table
+- The new entry in the History table contains time
+- The new entry in the History table contains expression according to the data enetered on the Steps 2-4
+- The new entry in the History table contains 'NaN' in the result cell
+
+ID      Title
+BAD-4   Letters in the input
+Step 1: Open page with the calculator https://juliemr.github.io/protractor-demo/
+Step 2: Enter 'letters' to the first input
+Step 3: Select devision operator '+'
+Step 4: Enter 45 to the second input 
+Step 5: Submit the expression (Click 'Go!' button)
+
+Expected result:
+- The application does not crash
+- 'NaN' is displayed in the result field under the calculator form
+- There is a new entry in the History table
+- The new entry in the History table contains time
+- The new entry in the History table contains expression according to the data enetered on the Steps 2-4
+- The new entry in the History table contains 'NaN' in the result cell
+
+ID      Title
+BAD-5   Punctuation in the input
+Step 1: Open page with the calculator https://juliemr.github.io/protractor-demo/
+Step 2: Enter 23 to the first input
+Step 3: Select devision operator '+'
+Step 4: Enter '!!!' to the second input 
+Step 5: Submit the expression (Click 'Go!' button)
+
+Expected result:
+- The application does not crash
+- 'NaN' is displayed in the result field under the calculator form
+- There is a new entry in the History table
+- The new entry in the History table contains time
+- The new entry in the History table contains expression according to the data enetered on the Steps 2-4
+- The new entry in the History table contains 'NaN' in the result cell

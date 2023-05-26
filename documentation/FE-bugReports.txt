@@ -1,0 +1,68 @@
+Test set 1 - Verifies arithmetic operations
+
+TestID: ADD-7
+Steps to reproduce:
+Step 1: Open page with the calculator https://juliemr.github.io/protractor-demo/
+Step 2: Enter first 1.5
+Step 3: Select '+' operator
+Step 4: Enter 100.456 
+Step 5: Submit the expression (Click 'Go!' button)
+Actula result: 101
+Expected result: 101.956
+
+TestID: SUB-11
+Steps to reproduce:
+Step 1: Open page with the calculator https://juliemr.github.io/protractor-demo/
+Step 2: Enter first 25.89
+Step 3: Select '-' operator
+Step 4: Enter 6.5 
+Step 5: Submit the expression (Click 'Go!' button)
+Actula result: 19
+Expected result: 19.39
+
+TestID: MULT-9
+Steps to reproduce:
+Step 1: Open page with the calculator https://juliemr.github.io/protractor-demo/
+Step 2: Enter first 5.5
+Step 3: Select '*' operator
+Step 4: Enter 5.5 
+Step 5: Submit the expression (Click 'Go!' button)
+Actula result: 25
+Expected result: 30.25
+
+TestID: DEV-11
+Steps to reproduce:
+Step 1: Open page with the calculator https://juliemr.github.io/protractor-demo/
+Step 2: Enter first 70.56
+Step 3: Select '/' operator
+Step 4: Enter 3.3 
+Step 5: Submit the expression (Click 'Go!' button)
+Actula result: 23.333333333333332
+Expected result: 21.3818181818
+
+TestID: MOD-5
+Steps to reproduce:
+Step 1: Open page with the calculator https://juliemr.github.io/protractor-demo/
+Step 2: Enter first 6.5
+Step 3: Select '%' operator
+Step 4: Enter 0.2 
+Step 5: Submit the expression (Click 'Go!' button)
+Actula result: NaN
+Expected result: 0.1
+
+Comment: I assume that all bugs mentioned above have the same root cause. 
+In case with decimal numbers calculator ignores everything after the decimal point.
+
+------------------------------------------------------------------------------------------
+
+Test set 2 - Verifies correct functioning with bad input
+
+TestID: BAD-2
+Steps to reproduce:
+Step 1: Open page with the calculator https://juliemr.github.io/protractor-demo/
+Step 2: Enter 16 to the first input
+Step 3: Select devision operator '%'
+Step 4: Enter 0 to the second input 
+Step 5: Submit the expression (Click 'Go!' button)
+Actula result: NaN
+Expected result: Infinity

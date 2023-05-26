@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "firstValue": 10,
+      "secondValue": 10,
+      "expectedResult": 20
+    },
+    {
+      "firstValue": 0,
+      "secondValue": 123,
+      "expectedResult": 123
+    },
+    {
+      "firstValue": 200000000000000001,
+      "secondValue": 10000000000000005,
+      "expectedResult": 2.1e+17
+    },
+    {
+      "firstValue": -56,
+      "secondValue": -789,
+      "expectedResult": -845
+    },
+    {
+      "firstValue": 0,
+      "secondValue": -905,
+      "expectedResult": -905
+    },
+    {
+      "firstValue": 10567,
+      "secondValue": -54,
+      "expectedResult": 10513
+    },
+    {
+      "firstValue": 1.5,
+      "secondValue": 100.456,
+      "expectedResult": 101.956
+    },
+    {
+      "firstValue": 43,
+      "secondValue": 4.3,
+      "expectedResult": 47.3
+    }
+  ]
+}
